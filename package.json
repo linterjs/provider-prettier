@@ -1,0 +1,39 @@
+{
+  "author": "Lucas Azzola <@azz>",
+  "bugs": {
+    "url": "https://github.com/linterjs/prettier/issues"
+  },
+  "keywords": [
+    "linter",
+    "prettier"
+  ],
+  "dependencies": {
+    "@linter/core": "^1.0.0-alpha.0",
+    "prettylint": "1.0.0",
+    "tslib": "^1.8.0"
+  },
+  "description": "Lint all the things... with one command",
+  "devDependencies": {
+    "@types/node": "^8.0.55",
+    "prettier": "1.9.1",
+    "typescript": "^2.6.2"
+  },
+  "homepage": "https://github.com/linterjs/prettier#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "name": "@linter/prettier",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "prettier": "^1.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linterjs/prettier.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "dist/index.d.ts",
+  "version": "1.0.0-alpha.0"
+}
