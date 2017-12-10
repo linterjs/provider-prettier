@@ -1,15 +1,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2017",
     "module": "commonjs",
     "removeComments": true,
     "preserveConstEnums": true,
     "declaration": true,
     "outDir": "dist",
     "downlevelIteration": true,
-    "importHelpers": true,
-    "lib": ["es2017"]
+    "importHelpers": true
   },
   "exclude": [
     "node_modules"
