@@ -12,13 +12,13 @@
     "target": "es2017"
   },
   "exclude": [
-    "**/__mock__",
-    "**/__snapshot__",
+    "**/__mocks__",
+    "**/__snapshots__",
     "**/__tests__",
     "**/*.spec.*",
     "**/*.test.*"
   ],
   "include": [
-    "src/**/*"
+    "./src"
   ]
 }

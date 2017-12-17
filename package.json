@@ -16,9 +16,11 @@
   "devDependencies": {
     "@types/jest": "^21.1.8",
     "@types/node": "^8.0.55",
+    "babel-preset-env": "^1.6.1",
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1",
     "prettier": "1.9.1",
+    "rimraf": "^2.6.2",
     "ts-jest": "^21.2.4",
     "typescript": "^2.6.2"
   },
@@ -38,7 +40,9 @@
     "url": "git+https://github.com/linterjs/prettier.git"
   },
   "scripts": {
+    "clean:test": "rimraf dist",
     "build": "tsc",
+    "pretest": "npm run clean:test",
     "test": "jest",
     "test:verbose": "jest --verbose"
   },
