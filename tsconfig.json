@@ -20,5 +20,10 @@
   ],
   "include": [
     "./src"
+  ],
+  "plugins": [
+    {
+      "name": "tslint-language-service"
+    }
   ]
 }
