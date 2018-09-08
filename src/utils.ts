@@ -7,7 +7,9 @@ import {
 import {
   LintMessage as PrettyLintMessage,
   LintResult,
-  LintSeverity as PrettyLintSeverity,
+  // XXX: Use number until we can find a way to import const enum when
+  // using single file typescript compilation that ts-jest are using.
+  // LintSeverity as PrettyLintSeverity,
 } from "prettylint";
 import { logger } from "./logger";
 
@@ -25,11 +27,8 @@ function prettylintResultToLintOutput(result: LintResult): LintOutput {
         column,
         line,
         message,
-        ruleId: ruleId ? ruleId : "parser",
-        severity:
-          severity === PrettyLintSeverity.Error
-            ? LintSeverity.ERROR
-            : LintSeverity.WARNING,
+        ruleId,
+        severity: severity === 2 ? LintSeverity.ERROR : LintSeverity.WARNING,
       }),
     ),
   };

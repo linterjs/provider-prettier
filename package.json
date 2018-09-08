@@ -15,12 +15,14 @@
   },
   "description": "Lint all the things... with one command",
   "devDependencies": {
-    "@types/jest": "^23.3.1",
+    "@types/jest": "^23.3.2",
     "@types/node": "^10.9.4",
     "@types/prettier": "^1.13.2",
     "babel-preset-env": "^1.7.0",
     "jest": "^23.5.0",
     "jest-cli": "^23.5.0",
+    "jest-plugin-fs": "^2.9.0",
+    "jest-plugins": "^2.9.0",
     "npm-check": "^5.8.0",
     "prettier": "^1.14.2",
     "rimraf": "^2.6.2",
@@ -29,13 +31,14 @@
     "tslint-config-prettier": "^1.15.0",
     "tslint-language-service": "^0.9.9",
     "tslint-plugin-prettier": "^1.3.0",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "unionfs": "^3.0.2"
   },
   "engines": {
     "node": ">=8.0.0"
   },
   "homepage": "https://github.com/linterjs/prettier#readme",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "dist/index.js",
   "maintainers": [
     "Simon Fridlund <simon@fridlund.email> (https://github.com/zimme)"

@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Format with already formatted text 1`] = `
+Object {
+  "errorCount": 0,
+  "filePath": "foo.js",
+  "messages": Array [
+    Object {
+      "column": 16,
+      "line": 0,
+      "message": "Insert \`⏎\`",
+      "ruleId": "prettier/prettier",
+      "severity": 1,
+    },
+  ],
+  "output": "var foo = \\"bar\\";
+",
+  "warningCount": 1,
+}
+`;
+
+exports[`Format with ignored file 1`] = `
+Object {
+  "errorCount": 0,
+  "filePath": "foo.js",
+  "messages": Array [
+    Object {
+      "column": 10,
+      "line": 0,
+      "message": "Replace \`'baz'\` with \`\\"baz\\";⏎\`",
+      "ruleId": "prettier/prettier",
+      "severity": 1,
+    },
+  ],
+  "output": "var bar = \\"baz\\";
+",
+  "warningCount": 1,
+}
+`;
+
+exports[`Format with text and filePath 1`] = `
+Object {
+  "errorCount": 0,
+  "filePath": "foo.js",
+  "messages": Array [
+    Object {
+      "column": 10,
+      "line": 0,
+      "message": "Replace \`'baz'\` with \`\\"baz\\";⏎\`",
+      "ruleId": "prettier/prettier",
+      "severity": 1,
+    },
+  ],
+  "output": "var bar = \\"baz\\";
+",
+  "warningCount": 1,
+}
+`;
+
+exports[`Lint with syntax error 1`] = `
+Object {
+  "errorCount": 1,
+  "filePath": "foo.js",
+  "messages": Array [
+    Object {
+      "column": 9,
+      "line": 1,
+      "message": "Unexpected token, expected \\";\\" (1:9)",
+      "ruleId": "prettier/prettier",
+      "severity": 2,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`Lint with text and filePath 1`] = `
+Object {
+  "errorCount": 0,
+  "filePath": "foo.js",
+  "messages": Array [
+    Object {
+      "column": 10,
+      "line": 0,
+      "message": "Replace \`'baz'\` with \`\\"baz\\";⏎\`",
+      "ruleId": "prettier/prettier",
+      "severity": 1,
+    },
+  ],
+  "warningCount": 1,
+}
+`;
